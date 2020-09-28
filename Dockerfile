@@ -129,7 +129,7 @@ RUN pip install neutronics_material_maker
 
 ENV OPENMC_CROSS_SECTIONS=/nndc-b7.1-hdf5/cross_sections.xml
 USER $NB_USER
-RUN echo redownloading
+
 RUN git clone -b develop https://github.com/ukaea/openmc_workshop
 
 USER root
